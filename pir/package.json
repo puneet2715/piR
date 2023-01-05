@@ -1,0 +1,25 @@
+{
+  "name": "piR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "nodemon src/index.js",
+    "run": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Puneet Arora",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "ffmpeg-static": "^5.1.0",
+    "ffprobe-static": "./packages/ffprobe-static",
+    "fluent-ffmpeg": "^2.1.2",
+    "gtts": "^0.2.1",
+    "multer": "1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  }
+}

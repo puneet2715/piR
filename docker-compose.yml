@@ -1,0 +1,16 @@
+version: '3'
+services:
+  filemod:
+    build: ./
+    ports:
+      - 4000:4000
+    hostname: filemod
+    volumes:
+      - ./pir/public/uploads:/pir/public/uploads
+    networks:
+      - nginx_proxy_manager_default
+    restart: always
+
+networks:
+  nginx_proxy_manager_default:
+    external: true
